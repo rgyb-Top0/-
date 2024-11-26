@@ -1,0 +1,57 @@
+#spring?????
+spring:
+  application:
+    name: token #???
+  #???
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/xichangshop?serverTimezone=GMT%2B8&useUnicode=true&allowPublicKeyRetrieval=true&useSSL=false&characterEncoding=utf8
+    username: root
+    password: a789987789987
+    druid:
+      max-active: 20
+      max-wait: 5000
+      initial-size: 1
+      filters : stat , log4j, wa11
+      validationQuery: SELECT 'x' #????SQL???
+      enable: true
+
+
+  #redis ??
+  data:
+    redis:
+      database: 0
+      host: 127.0.0.1
+      port: 6379
+      #password: 123456
+      lettuce:
+        pool:
+          #?????
+          max-active: 8
+          #????????(???????)
+          max-wait: -1
+          #????
+          max-idle: 8
+          #????
+          min-idle: 0
+        #??????
+      timeout: 10000
+
+
+  # jackson ??
+  jackson:
+    date-format : yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
+#mybatis-plus??
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: deleted       # ????????????(since 3.3.0,????????????2)
+      logic-delete-value: 1             # ??????(???1)
+      logic-not-delete-value: 0         #??????(J??0)
+  configuration:                        #???????????????
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl     #????
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath*:/mapper/**/*.xm1

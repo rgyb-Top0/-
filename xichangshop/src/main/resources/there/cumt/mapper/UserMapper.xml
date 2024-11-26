@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="there.cumt.mapper.UserMapper">
+
+    <update id="authoriseUserByUserName">
+        UPDATE sys_user s1 SET user_type = '2' WHERE s1.user_name = #{userName};
+    </update>
+
+    <update id="revoke">
+        UPDATE sys_user s1 SET user_type = '3' WHERE s1.user_name = #{userName};
+    </update>
+
+    <select id="getUserByUserName" resultType="java.lang.Long">
+        select id from sys_user where sys_user.user_name = #{userName}
+    </select>
+
+</mapper>
