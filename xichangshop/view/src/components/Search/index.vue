@@ -2,8 +2,8 @@
   <div>
     <div class="header">
       <div id="mallLogo">
-        <a href="/mall"
-          ><img src="../../assets/images/fore/WebsiteImage/tmallLogoD.png" />
+        <a href="/mall">
+<!--          <img src="../../assets/images/fore/WebsiteImage/tmallLogoD.png" />-->
           <span class="span_tmallBuyCar">{{ props.title }}</span></a
         >
       </div>
@@ -14,40 +14,40 @@
               type="text"
               class="searchInput"
               name="productName"
-              placeholder="搜索 商品/品牌/店铺"
+              placeholder="请输入"
               value=""
               maxlength="50"
             />
             <input type="submit" value="搜 索" class="searchBtn" />
           </div>
         </form>
-        <ul v-show="props.isShowLi">
-          <li><a href="/mall/product?categoryId=1">女装</a></li>
+<!--        <ul v-show="props.isShowLi">-->
+<!--          <li><a href="/mall/product?categoryId=1">女装</a></li>-->
 
-          <li>
-            <a href="/mall/product?categoryId=2" style="color: #ff0036">男装</a>
-          </li>
+<!--          <li>-->
+<!--            <a href="/mall/product?categoryId=2" style="color: #ff0036">男装</a>-->
+<!--          </li>-->
 
-          <li><a href="/mall/product?categoryId=3">女鞋</a></li>
+<!--          <li><a href="/mall/product?categoryId=3">女鞋</a></li>-->
 
-          <li>
-            <a href="/mall/product?categoryId=4" style="color: #ff0036">美妆</a>
-          </li>
+<!--          <li>-->
+<!--            <a href="/mall/product?categoryId=4" style="color: #ff0036">美妆</a>-->
+<!--          </li>-->
 
-          <li><a href="/mall/product?categoryId=5">腕表</a></li>
+<!--          <li><a href="/mall/product?categoryId=5">腕表</a></li>-->
 
-          <li>
-            <a href="/mall/product?categoryId=6" style="color: #ff0036">手机</a>
-          </li>
+<!--          <li>-->
+<!--            <a href="/mall/product?categoryId=6" style="color: #ff0036">手机</a>-->
+<!--          </li>-->
 
-          <li><a href="/mall/product?categoryId=7">母婴玩具</a></li>
+<!--          <li><a href="/mall/product?categoryId=7">母婴玩具</a></li>-->
 
-          <li>
-            <a href="/mall/product?categoryId=8" style="color: #ff0036">零食</a>
-          </li>
+<!--          <li>-->
+<!--            <a href="/mall/product?categoryId=8" style="color: #ff0036">零食</a>-->
+<!--          </li>-->
 
-          <li><a href="/mall/product?categoryId=9">生鲜水果</a></li>
-        </ul>
+<!--          <li><a href="/mall/product?categoryId=9">生鲜水果</a></li>-->
+<!--        </ul>-->
       </div>
     </div>
   </div>

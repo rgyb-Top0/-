@@ -2,7 +2,7 @@
   <div class="mall-main">
     <!-- 搜索头部 -->
     <div class="header">
-      <img src="../../assets/images/fore/WebsiteImage/HomeLogoB.png" />
+
       <div class="mallSearch">
         <form action="/product" method="get">
           <div class="mallSearch-input">
@@ -10,7 +10,7 @@
               class="header_search_input"
               type="text"
               name="productName"
-              placeholder="搜索 商品/品牌/店铺"
+              placeholder="请输入 "
               maxlength="50"
             />
             <input class="header_search_button" type="submit" value="搜索" />
@@ -37,15 +37,9 @@
         <img src="../../assets/images/fore/WebsiteImage/header_nav_title.png" />
         <span>商品分类</span>
       </div>
-      <a href="http://vip.mall.com/" target="_blank">Mall会员</a>
-      <a href="https://miao.mall.com/" target="_blank">Mall生鲜</a>
-      <a href="https://3c.mall.com/" target="_blank">智能家居</a>
-      <a href="http://yao.mall.com/" target="_blank">医药馆</a>
-      <a href="http://yao.mall.com/" target="_blank">医药馆</a>
-      <a href="http://wt.mall.com/" target="_blank">营业厅</a>
-      <a href="https://pin.mall.com/" target="_blank">Mall拼团</a>
-      <a href="https://suning.mall.com/" target="_blank">苏宁易购</a>
-      <a href="https://alitrip.mall.com/" target="_blank">Mall旅行</a>
+      <a  target="_blank">夏季校服</a>
+      <a  target="_blank">春秋季校服</a>
+      <a  target="_blank">冬季校服</a>
     </div>
 
     <!--  轮播主体  -->
@@ -142,7 +136,6 @@
           <li id="slider_3" :style="bannerIndex ===3?'background: rgba(255, 255, 255, 0.4)':''" @mouseover="bannerChange(3)"></li>
           <li id="slider_4" :style="bannerIndex ===4?'background: rgba(255, 255, 255, 0.4)':''" @mouseover="bannerChange(4)"></li>
           <li id="slider_5" :style="bannerIndex ===5?'background: rgba(255, 255, 255, 0.4)':''" @mouseover="bannerChange(5)"></li>
-          <li id="slider_6" :style="bannerIndex ===6?'background: rgba(255, 255, 255, 0.4)':''" @mouseover="bannerChange(6)"></li>
         </ul>
         <a href="#"></a>
       </div>

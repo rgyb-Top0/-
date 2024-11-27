@@ -3,7 +3,7 @@
     <div id="nav">
       <div class="nav_main">
         <p class="container_login" v-show="!isOnLogin">
-          <em>嗨！欢迎来到Mall商城</em>
+          <em>嗨！欢迎来到校服订购系统</em>
           <router-link to="/login">登录</router-link>
           <router-link to="/register">注册</router-link>
         </p>
@@ -18,13 +18,10 @@
 
         <!-- 右侧主体 -->
         <ul class="quick_li">
+
           <li class="quick_li_MyTaobao">
             <div class="sn_menu">
-              <router-link to="/userInfo">我的Mall</router-link>
-              <!-- <div class="quick_menu">
-                <a href="/mall/order/0/10">已买到的宝贝</a>
-                <a href="#">已卖出的宝贝</a>
-              </div> -->
+              <router-link to="/userInfo">用户中心</router-link><!---我的MAll --->
             </div>
           </li>
           <li class="quick_li_MyTaobao">
@@ -55,7 +52,7 @@
             </div>
             --->
           </li>
-          <li class="quick_home"><router-link to="/mall">Mall商城</router-link></li>
+          <li class="quick_home"><router-link to="/mall">跳转主页</router-link></li><!---Mall商城-->
         </ul>
       </div>
     </div>

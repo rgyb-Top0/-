@@ -3,7 +3,6 @@
     <!-- logo标签 -->
     <nav id="baseNavigator">
       <a href="/mall" target="_self">
-        <img src="../../assets/images/fore/WebsiteImage/tmallLogoD.png" />
       </a>
     </nav>
 
@@ -11,16 +10,16 @@
     <div class="content">
       <div class="contentMain"></div>
       <div class="loginDiv">
+        <!--
         <div :class="[isPwdLogin?'loginSwitch':'loginSwitch_two']" id="loginSwitch" @click="changeLoginTyp()"></div>
-
         <div class="loginMessage">
           <div class="loginMessageMain">
             <div class="poptip-arrow"><em></em><span></span></div>
             <img
-              src="../../assets/images/fore/WebsiteImage/scan-safe.png"
+                src="../../assets/images/fore/WebsiteImage/scan-safe.png"
             /><span>扫码登录更安全</span>
           </div>
-        </div>
+        </div>-->
 
         <div class="pwdLogin">
           <span class="loginTitle">密码登录</span>
@@ -30,7 +29,7 @@
                 :prefix-icon="User"
                 type="text"
                 v-model="loginForm.userName"
-                placeholder="会员名/邮箱/手机号"
+                placeholder="用户名/邮箱/手机号"
               />
             </el-form-item>
             <el-form-item class="loginInputDiv">
@@ -54,7 +53,7 @@
           </div>
         </div>
 
-        <div class="qrcodeLogin">
+       <!-- <div class="qrcodeLogin">
           <span class="loginTitle">手机扫码，安全登录</span>
           <div class="qrcodeMain">
             <img
@@ -80,12 +79,11 @@
             <a href="JavaScript:void(0)" id="pwdLogin">密码登录</a>
             <a href="#">免费注册</a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
-    <!-- 登录footer -->
-    <div class="footer-copyright">
+    <!--     <div class="footer-copyright">
       <div class="footer">
         <p>
           <a
@@ -190,7 +188,8 @@
           <b>© 2018 贤趣开发小组 版权所有</b>
         </div>
       </div>
-    </div>
+    </div> -->
+
   </div>
 </template>
 

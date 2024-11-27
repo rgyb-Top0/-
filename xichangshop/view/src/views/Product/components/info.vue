@@ -2,8 +2,7 @@
   <div class="product-info-main">
     <div class="header">
       <router-link to="/mall"
-        ><img src="../../../assets/images/fore/WebsiteImage/tmallLogoD.png"
-      /></router-link>
+        ></router-link>
       <span class="shopNameHeader">贤趣女装 /大衣官方旗舰店</span>
       <input id="tid" type="hidden" value="1" />
       <img

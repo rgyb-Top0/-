@@ -15,6 +15,7 @@ router.beforeEach((to: any, from: any, next: any) => {
     if(!isLogin()){
         clearToken()
     }
+    /*
     if (whileList.includes(to.path) || isLogin()) {
         next()
     } else {
@@ -24,7 +25,8 @@ router.beforeEach((to: any, from: any, next: any) => {
             path: '/mall'
         })
     }
-
+     */
+    next()
 })
 
 router.afterEach((to: any) => {
