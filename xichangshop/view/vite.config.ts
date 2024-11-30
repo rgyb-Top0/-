@@ -48,7 +48,7 @@ export default defineConfig({
     open: true, // 在服务器启动时自动在浏览器中打开应用程序
     proxy: {
       '/api': {
-        target: "http://localhost:8081",
+        target: "http://localhost:5176",
         rewrite: (path) => path.replace(/^\/api/, '/api'),
         changeOrigin: true, //是否有跨域
         ws: true,  // 允许websocket代理
